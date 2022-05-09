@@ -92,7 +92,11 @@ pading same ve valid parametresi alıyor. stride 1 ve padding same ise girdi boy
 #### dilation_rate=(1, 1),
 #### groups=1,
 #### activation=None,
-aktivasyon fonksiyonları
+* Sigmoid : x -2 ile +2 arasında iken y değerleri hızlı bir şekilde değişiyor. İyi bir sınıflayıcı olarak kullanılabilir. +sonsuz, -sonsuz arasında değer alırken 0,1 arasında çıkış üretir. Bu iyi haber aktivasyon değerleri çok yükselmez. Fonksiyon uç noktaları değişimlere az tepki gösteriyor buda eksi bir durum. Bu noktalarda değer 0 a çok yaklaştığı için gradyan ölmesi problemi (vanishing gradient) doğurur. Öğrenme çok çok az gerçekleşir buda istemediğimiz bir durum :)  
+* Hiperbolik tanjant : Sigmoid fonksiyona benzemektedir lakin fonksiyon aralığı (-1,+1) arasındadır. Türevi daha dik olması daha fazla değer alabileceği anlamına gelmektedir. Fakat bu fonksiyonunda uç noktalarında gradyan ölmesi durumu vardır.
+* ReLu : Eksi bölgelerde sıfır değeri alması ağın daha hızlı çalışacağı anlamına gelmektedir. Çok fazla nöronlu sinir ağlarında yaygın kullanılır. Verimliliği yüksektir. Eksi bölgede türevininde sıfır olması öğrenmenin gerçekleşmeyeceği anlamına geliyor buda üzücü tabi :)
+* Leaky ReLU : Sızıntı değeri 0,01 olarak veriliyor. Tanım aralığı - sonsuza doğru gidiyor. - bölgede değerler 0 olmadığı için öğrenme devam ediyor. gradyan ölmesi durumu yaşanmıyor.
+* softmax : Sigmoid fonksiyonuna benzer yapıdadır. Sınıflayıcı olarak kullanıldığında iyi performans gösterir. İkiden fazla sınıf olduğu durumlarda modelin çıkış katmanında tercih edilir. Girdinin belirli sınıfa ait olma olasılığını 0 ile 1 arasında değerler üreterek belirlenmesini sağlar. Olasılıksal bir yorumlama gerçekleştirir.
 #### use_bias=True,
 #### kernel_initializer='glorot_uniform',
 #### bias_initializer='zeros',
@@ -107,4 +111,5 @@ aktivasyon fonksiyonları
 * https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D
 * https://www.tensorflow.org/api_docs/python/tf/keras/activations
 * https://pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/
+* https://ayyucekizrak.medium.com/derin-%C3%B6%C4%9Frenme-i%C3%A7in-aktivasyon-fonksiyonlar%C4%B1n%C4%B1n-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1-cee17fd1d9cd
 * 
