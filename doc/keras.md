@@ -81,7 +81,8 @@ Klasörden verileri okumak için kullanılan method.
 * Hiperbolik tanjant : Sigmoid fonksiyona benzemektedir lakin fonksiyon aralığı (-1,+1) arasındadır. Türevi daha dik olması daha fazla değer alabileceği anlamına gelmektedir. Fakat bu fonksiyonunda uç noktalarında gradyan ölmesi durumu vardır.
 * ReLu : Eksi bölgelerde sıfır değeri alması ağın daha hızlı çalışacağı anlamına gelmektedir. Çok fazla nöronlu sinir ağlarında yaygın kullanılır. Verimliliği yüksektir. Eksi bölgede türevininde sıfır olması öğrenmenin gerçekleşmeyeceği anlamına geliyor buda üzücü tabi :)
 * Leaky ReLU : Sızıntı değeri 0,01 olarak veriliyor. Tanım aralığı - sonsuza doğru gidiyor. - bölgede değerler 0 olmadığı için öğrenme devam ediyor. gradyan ölmesi durumu yaşanmıyor.
-* softmax : Sigmoid fonksiyonuna benzer yapıdadır. Sınıflayıcı olarak kullanıldığında iyi performans gösterir. İkiden fazla sınıf olduğu durumlarda modelin çıkış katmanında tercih edilir. Girdinin belirli sınıfa ait olma olasılığını 0 ile 1 arasında değerler üreterek belirlenmesini sağlar. Olasılıksal bir yorumlama gerçekleştirir.
+* softmax : Sigmoid fonksiyonuna benzer yapıdadır. Sınıflayıcı olarak kullanıldığında iyi performans gösterir. İkiden fazla sınıf olduğu durumlarda modelin çıkış katmanında tercih edilir. Girdinin belirli sınıfa ait olma olasılığını 0 ile 1 arasında değerler üreterek belirlenmesini sağlar. Olasılıksal bir yorumlama gerçekleştirir.  
+
 **use_bias=True**   
 **kernel_initializer='glorot_uniform'**  
 **bias_initializer='zeros'**  
