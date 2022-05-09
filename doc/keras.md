@@ -17,6 +17,7 @@ Hem veri arttırma işlemi yapabiliyoruz hemde işlemeye hazır veri elde ediyor
 #### zca_epsilon=1e-06,
 #### rotation_range=0,
 Görüntüyü kendi ekseninde döndürür.
+![rotate](/images/doc_dataAug/rotation_range.jpg)
 #### width_shift_range=0.0,
 Görüntüyü yatay eksende kaydırma işlemi yapar. Görüntü boyutunda değişiklik olmaz.
 #### height_shift_range=0.0,
