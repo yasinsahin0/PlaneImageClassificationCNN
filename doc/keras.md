@@ -98,4 +98,6 @@ Klasörden verileri okumak için kullanılan method.
 * https://www.tensorflow.org/api_docs/python/tf/keras/activations
 * https://pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/
 * https://ayyucekizrak.medium.com/derin-%C3%B6%C4%9Frenme-i%C3%A7in-aktivasyon-fonksiyonlar%C4%B1n%C4%B1n-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1-cee17fd1d9cd
-* 
+
+### Değerlendirme
+* matrix = metrics.confusion_matrix(y_test.argmax(axis=1), y_pred.argmax(axis=1))
