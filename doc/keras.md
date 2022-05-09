@@ -9,6 +9,7 @@ Birden fazla input alabilir. Biraz daha zor ama esnektir.
 
 ## tf.keras.preprocessing.image.ImageDataGenerator
 Hem veri arttırma işlemi yapabiliyoruz hemde işlemeye hazır veri elde ediyoruz. Baya kolaylık sağlıyor. 
+[Data Augmentation örnekleri için göz atın...](https://github.com/yasinsahin0/plane_cnn_image_classification/tree/main/images/doc_dataAug)
 #### featurewise_center=False,
 #### samplewise_center=False,
 #### featurewise_std_normalization=False,
@@ -17,7 +18,6 @@ Hem veri arttırma işlemi yapabiliyoruz hemde işlemeye hazır veri elde ediyor
 #### zca_epsilon=1e-06,
 #### rotation_range=0,
 Görüntüyü kendi ekseninde döndürür.
-![rotate](/images/doc_dataAug/rotation_range.jpg)
 #### width_shift_range=0.0,
 Görüntüyü yatay eksende kaydırma işlemi yapar. Görüntü boyutunda değişiklik olmaz.
 #### height_shift_range=0.0,
