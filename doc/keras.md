@@ -11,7 +11,7 @@ Birden fazla input alabilir. Biraz daha zor ama esnektir.
 Hem veri arttırma işlemi yapabiliyoruz hemde işlemeye hazır veri elde ediyoruz. Baya kolaylık sağlıyor. 
 [Data Augmentation örnekleri için göz atın...](https://github.com/yasinsahin0/plane_cnn_image_classification/tree/main/images/doc_dataAug)  
 
-'featurewise_center=False,'  
+'featurewise_center=False'  
 'samplewise_center=False,'  
 'featurewise_std_normalization=False,'  
 'samplewise_std_normalization=False,'  
