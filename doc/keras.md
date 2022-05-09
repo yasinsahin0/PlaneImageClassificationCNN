@@ -8,7 +8,7 @@ Tek input katmanı var. Kolay ama esnek değil.
 Birden fazla input alabilir. Biraz daha zor ama esnektir.
 
 ## tf.keras.preprocessing.image.ImageDataGenerator
-
+Hem veri arttırma işlemi yapabiliyoruz hemde işlemeye hazır veri elde ediyoruz. Baya kolaylık sağlıyor. 
 #### featurewise_center=False,
 #### samplewise_center=False,
 #### featurewise_std_normalization=False,
@@ -16,20 +16,30 @@ Birden fazla input alabilir. Biraz daha zor ama esnektir.
 #### zca_whitening=False,
 #### zca_epsilon=1e-06,
 #### rotation_range=0,
+Görüntüyü kendi ekseninde döndürür.
 #### width_shift_range=0.0,
+Görüntüyü yatay eksende kaydırma işlemi yapar. Görüntü boyutunda değişiklik olmaz.
 #### height_shift_range=0.0,
+Görüntüyü dikey eksende kaydırma işlemi yapar. Görüntü boyutunda değişiklik olmaz.
 #### brightness_range=None,
+Görüntü parlaklığını ayarlar. Parametre tuple türünde float değer alıyor. Örn; (3.0, 4.0)
 #### shear_range=0.0,
 #### zoom_range=0.0,
+Görüntüyü yatay ve dikey olarak zoom yapıyor. örn; 0.4
 #### channel_shift_range=0.0,
 #### fill_mode='nearest',
+{"constant", "nearest", "reflect" or "wrap"}. parametreleri alır.
 #### cval=0.0,
 #### horizontal_flip=False,
+Görüntüyü yatay eksende aynalama işlemi yapar.(True)
 #### vertical_flip=False,
+Görüntüyü dikey eksende aynalama işlemi yapar.(True)
 #### rescale=None,
+Ölçeklendirme yapıyoruz piksel değerleri üzerinde. 0-1 arasına sıkıştırmamızın sebebi bit boyutu yani modele vereceğimiz görüntünün yüksek sayısal değerlerle uğraşmamsını istiyoruz. örn; (rescale=1./255)
 #### preprocessing_function=None,
 #### data_format=None,
 #### validation_split=0.0,
+Doğrulama için ayrılan görüntülerin oranını giriyoruz. yaptığımız değişikliklerin ne kadar gerçekleştiğini kendisi test ediyor. 0 ile 1 arasında float değer alıyor.
 #### dtype=None
 
 
@@ -92,3 +102,7 @@ aktivasyon fonksiyonları
 
 ## Kaynaklar
 * https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator
+* https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D
+* https://www.tensorflow.org/api_docs/python/tf/keras/activations
+* https://pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/
+* 
